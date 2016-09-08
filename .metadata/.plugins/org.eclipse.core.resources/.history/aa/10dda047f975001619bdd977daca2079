@@ -1,0 +1,30 @@
+package test.techgig;
+
+class B {
+
+	public void test() {
+		System.out.println("inside b");
+	}
+
+	public void test1() {
+		System.out.println("inside b1");
+	}
+}
+
+public class A extends B {
+
+	/**
+	 * @param args
+	 */
+	public void test() {
+		System.out.println("inside A");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B b = new Test();
+		b.test();
+		b.test1();
+	}
+
+}
