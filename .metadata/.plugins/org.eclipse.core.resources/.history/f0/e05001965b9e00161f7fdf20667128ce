@@ -1,0 +1,36 @@
+package utd.nikita.code;
+
+class Tree {
+	public int x;
+	public Tree l;
+	public Tree r;
+}
+
+public class Test123 {
+
+	static int maxHeight;
+
+	public int solution(int A, int B, Tree T) {
+
+		if (T == null)
+			return -1;
+
+		if (T.x >= A && T.x <= B) {
+			maxHeight = maxHeight + 1;
+			int leftTreeHeight = solution(A, B, T.l);
+			if (leftTreeHeight == 0) {
+				maxHeight = 0;
+				return 0;
+			}
+			int rightTreeHeight = solution(A, B, T.r);
+			if (rightTreeHeight == 0) {
+				maxHeight = 0;
+				return 0;
+			}
+		} else {
+			return 0;
+		}
+
+		return maxHeight;
+	}
+}

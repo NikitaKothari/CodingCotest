@@ -1,0 +1,37 @@
+package utd.nikita.code;
+
+public class Solution {
+
+	public String solution(String S, int K) {
+		if (S == "" || S.length() == 0)
+			return S;
+		if (S.length() == 1)
+			return S.toUpperCase();
+
+		StringBuilder resultedString = new StringBuilder();
+		int noOfDashes = 0;
+
+		for (int i = 0; i < S.length(); i++) {
+			if (S.charAt(i) == '-')
+				noOfDashes++;
+		}
+
+		S = S.replace("-", "").toUpperCase();
+		int len = S.length();
+
+		int index = 0;
+		while (index >= len) {
+			if (index == 0) {
+				if (len % K == 0) {
+					resultedString.append(S.substring(index, K));
+				} else {
+					resultedString.append(S.substring(index, len % K));
+				}
+			}
+		}
+
+		return S;
+
+	}
+
+}

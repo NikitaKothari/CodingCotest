@@ -1,0 +1,30 @@
+package utd.nikita.code;
+
+public class Reverse {
+
+	public int reverse(int x) {
+		long reverse = 0;
+		while (x != 0) {
+			reverse = reverse * 10 + x % 10;
+			x = x / 10;
+		}
+		return (int) ((reverse > Integer.MAX_VALUE || reverse < Integer.MIN_VALUE) ? 0 : reverse);
+	}
+
+	public boolean isPalindrome(int x) {
+		if (x < 0 || (x != 0 && x % 10 == 0))
+			return false;
+		int rev = 0;
+		while (x > rev) {
+			rev = rev * 10 + x % 10;
+			x = x / 10;
+		}
+		return (x == rev || x == rev / 10);
+	}
+
+	public static void main(String args[]) {
+		Reverse r = new Reverse();
+		System.out.println(r.isPalindrome(-2147447412));
+	}
+
+}

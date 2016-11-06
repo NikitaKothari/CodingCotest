@@ -1,0 +1,14 @@
+package utd.nikita.code;
+
+class Tree {
+	public int x;
+	public Tree l;
+	public Tree r;
+}
+
+public class Test123 {
+	public int solution(int A, int B, Tree T) {
+		return B;
+		// write your code in Java SE 8
+	}
+}

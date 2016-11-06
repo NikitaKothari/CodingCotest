@@ -1,0 +1,20 @@
+package utd.nikita.code;
+
+public class LinkedList {
+
+	public int length(ListNode l) {
+		int length = 0;
+
+		while (l != null) {
+			length++;
+			l = l.next;
+		}
+		return length;
+	}
+
+	public ListNode removeNthFromEnd(ListNode head, int n) {
+
+		return null;
+
+	}
+}

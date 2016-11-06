@@ -1,0 +1,74 @@
+package utd.nikita.code;
+
+class ListNodeAdd {
+	int val;
+	ListNodeAdd next;
+
+	ListNodeAdd(int x) {
+		val = x;
+	}
+}
+
+public class AddLinkList {
+
+	public ListNodeAdd addTwoNumbersCopy(ListNodeAdd l1, ListNodeAdd l2) {
+		ListNodeAdd ln1 = l1, ln2 = l2, head = null, node = null;
+		int carry = 0, remainder = 0, sum = 0;
+		head = node = new ListNodeAdd(0);
+
+		while (ln1 != null || ln2 != null || carry != 0) {
+			sum = (ln1 != null ? ln1.val : 0) + (ln2 != null ? ln2.val : 0) + carry;
+			carry = sum / 10;
+			remainder = sum % 10;
+			node = node.next = new ListNodeAdd(remainder);
+			ln1 = (ln1 != null ? ln1.next : null);
+			ln2 = (ln2 != null ? ln2.next : null);
+		}
+		return head.next;
+	}
+
+	public ListNodeAdd addTwoNumbers(ListNodeAdd l1, ListNodeAdd l2) {
+
+		ListNodeAdd l3 = new ListNodeAdd(0);
+		ListNodeAdd head = l3;
+		int carry = 0, remainder = 0, sum = 0;
+
+		while (l1 != null || l2 != null) {
+			if (l1 == null) {
+				sum = l2.val;
+				l2 = l2.next;
+			} else if (l2 == null) {
+				sum = l1.val;
+				l1 = l1.next;
+			} else {
+				sum = l1.val + l2.val;
+				l1 = l1.next;
+				l2 = l2.next;
+			}
+			sum = sum + carry;
+			carry = sum / 10;
+			remainder = sum % 10;
+			l3 = l3.next = new ListNodeAdd(remainder);
+		}
+		if (carry != 0) {
+			l3 = l3.next = new ListNodeAdd(carry);
+		}
+		return head.next;
+	}
+
+	public static void main(String args[]) {
+		ListNodeAdd l1 = new ListNodeAdd(0);
+		ListNodeAdd l2 = new ListNodeAdd(0);
+		l1.val = 5;
+		l1.next = new ListNodeAdd(0);
+		l1.next.val = 3;
+
+		l2.val = 7;
+		l2.next = new ListNodeAdd(0);
+		l2.next.val = 6;
+
+		AddLinkList a = new AddLinkList();
+		a.addTwoNumbersCopy(l1, l2);
+	}
+
+}

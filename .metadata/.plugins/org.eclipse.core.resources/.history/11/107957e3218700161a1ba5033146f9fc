@@ -1,0 +1,30 @@
+package cracking.coding.interview;
+
+import java.util.Scanner;
+
+public class Anagrams {
+	public static int numberNeeded(String first, String second) {
+		String result = "";
+		int maxlength = first.length() > second.length() ? first.length() : second.length();
+		for (int i = 0; i < maxlength; i++) {
+			if (first.length() > i) {
+				if (!second.contains("" + first.charAt(i)) && !result.contains("" + first.charAt(i))) {
+					result = result + first.charAt(i);
+				}
+			}
+			if (second.length() > i) {
+				if (!first.contains("" + second.charAt(i)) && !result.contains("" + second.charAt(i))) {
+					result = result + second.charAt(i);
+				}
+			}
+		}
+		return result.length();
+	}
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String first = in.next();
+		String second = in.next();
+		System.out.println(numberNeeded(first, second));
+	}
+}

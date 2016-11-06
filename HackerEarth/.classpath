@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_101"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CrackingTheCodingInterview"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/HackerRank"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/leetcode"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Techgig"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

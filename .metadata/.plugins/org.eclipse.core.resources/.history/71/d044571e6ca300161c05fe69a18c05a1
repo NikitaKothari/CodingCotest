@@ -1,0 +1,14 @@
+package chapter1.ararys.strings;
+
+class ListNode {
+	int val;
+	ListNode next;
+
+	ListNode(int x) {
+		val = x;
+	}
+}
+
+public class LinkedListOperations {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;b&apos; in &apos;cracking.coding.interview.RotateArray.rotate(...)&apos; to &apos;afterRotation&apos;&#x0D;&#x0A;- Original project: &apos;HackerEarth&apos;&#x0D;&#x0A;- Original element: &apos;cracking.coding.interview.RotateArray.rotate(int[], int).b&apos;&#x0D;&#x0A;- Renamed element: &apos;b&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;b&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;cracking.coding.interview{RotateArray.java[RotateArray~rotate~\[I~I@b!485!512!491!491!\[I!0!false" name="afterRotation" references="true" stamp="1474999511463" version="1.0"/>
+</session>

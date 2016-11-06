@@ -1,0 +1,21 @@
+package utd.nikita.code;
+
+public class Reverse {
+
+	public int reverse(int x) {
+		if (x > Integer.MAX_VALUE && x < Integer.MIN_VALUE)
+			return 0;
+		int reverse = 0;
+		while (x != 0) {
+			reverse = reverse * 10 + x % 10;
+			x = x / 10;
+		}
+		return reverse;
+	}
+
+	public static void main(String args[]) {
+		Reverse r = new Reverse();
+		System.out.println(r.reverse(1534236469));
+	}
+
+}

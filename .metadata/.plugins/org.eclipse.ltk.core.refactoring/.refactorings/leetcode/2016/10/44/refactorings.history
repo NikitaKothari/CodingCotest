@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;utd.nikita.code.median&apos; to &apos;Median&apos;&#x0D;&#x0A;- Original project: &apos;leetcode&apos;&#x0D;&#x0A;- Original element: &apos;utd.nikita.code.median&apos;&#x0D;&#x0A;- Renamed element: &apos;utd.nikita.code.Median&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;median&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;utd.nikita.code{median.java[median" matchStrategy="1" name="Median" qualified="false" references="true" similarDeclarations="false" stamp="1477458340035" textual="false" version="1.0"/>
+</session>

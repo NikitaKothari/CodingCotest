@@ -1,0 +1,22 @@
+package chapter1.ararys.strings;
+
+public class Permutation {
+
+	public String sort(String s) {
+		char [] c = s.toCharArray();
+	    Arrays.sort(c);
+	    return new String(c);
+	}
+
+	public boolean permutation(String s, String t){
+		if(s.length() != t.length()){
+			return false;
+		}
+		return sor(s)
+	}
+
+	public static void main(String args[]) {
+		System.out.println(isUniqueOptimize("asds"));
+	}
+
+}

@@ -1,0 +1,11 @@
+package chapter1.ararys.strings;
+
+public class Matrix {
+	boolean rotate(int[][] matrix) {
+		int n = matrix.length;
+		for (int layer = 0; layer < n; layer++) {
+
+		}
+		return true;
+	}
+}
